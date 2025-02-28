@@ -29,6 +29,11 @@ resource "azurerm_resource_group" "rarg" {
   tags     = local.tags
 }
 
+resource "azurerm_resource_group" "newbranch" {
+  name     = "againbranch"
+  location = "West Europe"
+  tags     = local.tags
+}
 resource "azurerm_storage_account" "stg" {
   name                     = "storageaccountname"
   resource_group_name      = azurerm_resource_group.rarg.name
