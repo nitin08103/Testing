@@ -30,7 +30,7 @@ resource "azurerm_resource_group" "rarg" {
 }
 
 resource "azurerm_resource_group" "newbranch" {
-  name     = "newbranch"
+  name     = "againbranch"
   location = "West Europe"
   tags     = local.tags
 }
